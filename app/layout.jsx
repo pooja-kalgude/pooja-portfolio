@@ -15,7 +15,7 @@ export const metadata = {
   title,
   description: siteConfig.tagline,
   generator: 'v0.app',
-  keywords: ['Full Stack Developer', 'React', 'Next.js', 'Node.js', 'NestJS', 'MySQL', 'Portfolio'],
+  keywords: ['Full Stack Developer', 'React', 'Next.js', 'Node.js', 'PHP', 'MySQL', 'Portfolio'],
   openGraph: {
     title,
     description: siteConfig.tagline,

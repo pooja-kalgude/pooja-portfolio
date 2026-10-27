@@ -1,4 +1,4 @@
-import { ArrowUpRight, Mail } from "lucide-react"
+import { ArrowUpRight, Mail, Phone } from "lucide-react"
 import { GithubIcon as Github, LinkedinIcon as Linkedin } from "@/components/brand-icons"
 import { Section } from "@/components/section"
 import { Reveal } from "@/components/reveal"
@@ -6,10 +6,11 @@ import { ButtonLink } from "@/components/button-link"
 import { ResumeButton } from "@/components/resume-button"
 import { siteConfig } from "@/lib/site-config"
 
-const { email, linkedin, github } = siteConfig.contact
+const { email, phone, linkedin, github } = siteConfig.contact
 
 const channels = [
   { label: "Email", value: email, href: email ? `mailto:${email}` : "", icon: Mail, external: false },
+  { label: "Phone", value: phone, href: phone ? `tel:${phone.replace(/[^+\d]/g, "")}` : "", icon: Phone, external: false },
   { label: "LinkedIn", value: linkedin.replace(/^https?:\/\/(www\.)?/, ""), href: linkedin, icon: Linkedin, external: true },
   { label: "GitHub", value: github.replace(/^https?:\/\/(www\.)?/, ""), href: github, icon: Github, external: true },
 ]
